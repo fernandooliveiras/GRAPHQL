@@ -13,18 +13,12 @@ public class Livro {
 	private String titulo;
 	private Integer paginas;
 	
-	@ManyToOne
+	@ManyToOne(fetch = FetchType.EAGER)
     @JoinColumn(name = "author_id",
             nullable = false, updatable = false)
 	private Autor autor;
-
-	@ManyToMany
-	@JoinTable(
-			name = "bibliotecas_livros",
-			joinColumns = @JoinColumn(name = "livro_id"),
-			inverseJoinColumns = @JoinColumn(name = "biblioteca_id"))
-	private List<Biblioteca> bibliotecas;
-
+	@ManyToOne(fetch = FetchType.EAGER)
+	Biblioteca biblioteca;
 
 	public Livro() {
 		

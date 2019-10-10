@@ -15,8 +15,8 @@ public class Biblioteca {
     private String nome;
     private String endereco;
 
-    @OneToMany(targetEntity = Livro.class,
-            cascade=CascadeType.ALL, fetch = FetchType.EAGER)
+    @ManyToMany(fetch = FetchType.EAGER)
+    @JoinTable(name = "bibliotecas_livros")
     List<Livro> livros;
 
     public Biblioteca(String nome, String endereco) {

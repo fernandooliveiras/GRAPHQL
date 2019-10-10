@@ -1,3 +1,9 @@
+type Livro {
+    id: ID!
+    titulo: String!
+    paginas: Int
+    autor: Autor
+}
 type Biblioteca {
     id: ID!
     nome: String!

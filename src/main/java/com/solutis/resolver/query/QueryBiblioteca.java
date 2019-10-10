@@ -21,6 +21,7 @@ public class QueryBiblioteca implements GraphQLQueryResolver {
     }
 
     public Iterable<Biblioteca> findAllBibliotecas(){
+        System.out.println(bibliotecaRepository.findAll());
         return bibliotecaRepository.findAll();
     }
 

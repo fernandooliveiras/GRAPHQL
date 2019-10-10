@@ -42,11 +42,11 @@ public class MutationBiblioteca implements GraphQLMutationResolver {
 
         Livro livro = livroRepository.findById(idLivro).get();
         List<Livro> livros;
-        livros = livroRepository.findAll();
-        livros.add(livro);
-//        biblioteca.setLivros(livros);
-        biblioteca.addLivros(livro);
 
+        biblioteca.getLivros().add(livro);
+
+        System.out.println(biblioteca);
+        bibliotecaRepository.save(biblioteca);
         return biblioteca;
     }
 
