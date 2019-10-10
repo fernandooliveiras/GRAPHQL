@@ -1,0 +1,21 @@
+type Biblioteca {
+    id: ID!
+    nome: String!
+    endereco: String
+    livros: [Livro]
+}
+
+extend type Query {
+    findAllBibliotecas: [Biblioteca]!
+    findBibliotecaByName(nome: String!): [Biblioteca]!
+    findBibliotecaByEndereco(endereco: String):  [Biblioteca]!
+    countBibliotecas: Long!
+}
+
+extend type Mutation {
+    adicionaLivro(idLivro: ID!, idBiblioteca: ID!) : Biblioteca!
+    novaBiblioteca(nome: String!, endereco: String) : Biblioteca!
+    deleteBiblioteca(id: ID!) : Boolean
+    updateNome(nome: String!, id: ID!) : Biblioteca!
+    updateEndereco(endereco: String!, id: ID!) : Biblioteca!
+}

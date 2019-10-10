@@ -1,0 +1,21 @@
+type Autor {
+    id: ID!
+    nome: String!
+    idade: Long!
+}
+
+input AutorInput{
+    nome: String!
+    idade: Long!
+}
+
+type Query {
+    findAllAutores: [Autor]!
+    findAutorById(id: ID!): Autor!
+    countAutores: Long!
+
+}
+
+type Mutation {
+    novoAutor(input: AutorInput): Autor!
+}

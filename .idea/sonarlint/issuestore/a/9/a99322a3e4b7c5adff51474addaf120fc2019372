@@ -1,0 +1,10 @@
+
+Usquid:S3655<"7Call "Optional#isPresent()" before accessing the value.(»¦¹²8ˆ­‡Û-
+Tsquid:S3655)"7Call "Optional#isPresent()" before accessing the value.(®«­u8¥¼ØÛ-
+osquid:UselessImportCheck	"DRemove this unused import 'org.hibernate.service.spi.InjectService'.(×û£8Å®ˆÛ-
+Zsquid:UselessImportCheck"*Remove this unused import 'java.util.Set'.(ö²„¤şÿÿÿÿ8ªóÔÛ-
+Tsquid:S3655+"7Call "Optional#isPresent()" before accessing the value.(Í¨°18¢Ö—Û-
+\squid:S1854(">Remove this useless assignment to local variable "biblioteca".(ıÀ±ù8Ã¦ÕÛ-
+Usquid:S3655H"7Call "Optional#isPresent()" before accessing the value.(»¦¹²8ˆ­‡Û-
+Msquid:EmptyStatementUsageCheck7"Remove this empty statement.(Ôì™¹8¶›ı›Û-
+isquid:CommentedOutCodeLine/"<This block of commented-out lines of code should be removed.(Ÿİ¬ş8ìòÚÛ-
